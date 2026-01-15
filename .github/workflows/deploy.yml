@@ -8,15 +8,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Special+Elite&display=swap" rel="stylesheet">
     <style>
-      /* Configuration Tailwind de base via CSS car nous n'avons pas de step de build CSS complet ici, 
-         mais en prod via Vite, Tailwind sera injecté si configuré. 
-         Pour l'instant, on garde le CDN pour le développement rapide sans étape de build complexe en local,
-         mais le package.json est prêt pour une vraie install. */
+      /* Configuration Tailwind de base via CSS */
       body {
         background-color: #050505;
         color: #d1d5db;
       }
-      /* Custom scrollbar for that arcane feel */
       ::-webkit-scrollbar {
         width: 8px;
       }
@@ -31,7 +27,6 @@
         background: #8a0303; 
       }
     </style>
-    <!-- On garde le CDN pour la prévisualisation immédiate, mais le build utilisera postcss -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
